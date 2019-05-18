@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "externalConsole": true,
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - External Terminal",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Integrated Terminal",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
