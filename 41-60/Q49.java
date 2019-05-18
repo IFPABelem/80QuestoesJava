@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Q49 {
 	/**
-		Faça um programa que leia um número se ele for maior que 20, então imprima sua metade.
+		49. Faça um programa que leia um número se ele for maior que 20, então imprima sua metade.
 	*/
 
 	public static void main (String[] args) {
