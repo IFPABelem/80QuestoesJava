@@ -7,8 +7,8 @@ public class Q50 {
 	*/
 
 	private static int inverso(int numero) {
-		int novoNumero = 0;
-		for(numero = numero; numero != 0; numero /= 10) {
+		int novoNumero;
+		for(novoNumero = 0; numero > 0; numero /= 10) {
 			int digito = numero % 10;
 			novoNumero =  (novoNumero * 10) + digito;
 		}
