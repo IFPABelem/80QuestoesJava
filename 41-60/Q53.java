@@ -2,9 +2,8 @@ import javax.swing.JOptionPane;
 
 public class Q53 {
 	/**
-		53. Faça um programa que leia um peso na Terra e o número de um planeta e imprima o valor
+		53. Faça um programa que leia um peso na Terra e a letra de um planeta e imprima o valor
 		do seu peso no planeta escolhido.
-		// TODO Número ~> Letra ?
 
 		Gravidades relativas a Terra:
 
@@ -16,8 +15,7 @@ public class Q53 {
 		f) 1,17 Urano
 
 		Para calcular o peso no planeta use a formula:
-		Peso planeta * Peso terra / 10 * Gravidade
-		// TODO ?-? Peso no Planeta = Peso / 10 * gravidade
+		Peso planeta = Peso terra / 10 * Gravidade
 	*/
 
 	private static double obterPeso (double peso, double gravidade) {

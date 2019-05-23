@@ -28,7 +28,7 @@ public class Q47 {
 		double faturamentoAtrasoMes = quantidadeAtrasoMes * valorAtraso;
 
 		int quantidadeEstradasFitasAno = (int)(0.02 * quantidadeFitas);
-		int quantidadeNovasFitasAno = (int)(quantidadeFitas * 0.1); // TODO: Qual total ? quantidadeFitas || quantidadeEstradasFitasAno
+		int quantidadeNovasFitasAno = (int)(quantidadeFitas * 0.1);
 		int quantidadeTotalFitasAno = quantidadeFitas - quantidadeEstradasFitasAno + quantidadeNovasFitasAno;
 
 		String text = "Faturamento anual da locadora somente com locação das fitas: R$" + faturamentoAluguelAnual + "\n"

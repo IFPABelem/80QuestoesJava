@@ -2,8 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Q52 {
 	/**
-		52. Faça um programa que leia um número e imprima se ele é positivo, positivo ou nulo.
-		// TODO positivo ~> negativo ?
+		52. Faça um programa que leia um número e imprima se ele é positivo, negativo ou nulo.
 	*/
 
 	public static void main (String[] args) {

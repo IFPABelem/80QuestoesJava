@@ -18,7 +18,9 @@ public class Q54 {
 			numero -= 5;
 		}
 
-		String text = "Resultado: " + numero;
-		JOptionPane.showMessageDialog(null, text);
+		if (numero != (a + b)) {
+			String text = "Resultado: " + numero;
+			JOptionPane.showMessageDialog(null, text);
+		}
 	}
 }

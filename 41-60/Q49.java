@@ -11,8 +11,7 @@ public class Q49 {
 
 		if (n > 20) {
 			text += "Sua metade é " + (n / 2);
+			JOptionPane.showMessageDialog(null, text);
 		}
-
-		JOptionPane.showMessageDialog(null, text);
 	}
 }

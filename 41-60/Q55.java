@@ -12,12 +12,10 @@ public class Q55 {
 		String text = "Número: " + numero + "\n";
 		if (numero > 0) {
 			text += "Sua raiz quadrada: " + Math.sqrt(numero);
+			JOptionPane.showMessageDialog(null, text);
 		} else if (numero < 0) {
-			text = "Seu quadrado: " + (numero * numero);
-		} else {
-			text = "(Não fazer nada)";
+			text += "Seu quadrado: " + (numero * numero);
+			JOptionPane.showMessageDialog(null, text);
 		}
-
-		JOptionPane.showMessageDialog(null, text);
 	}
 }

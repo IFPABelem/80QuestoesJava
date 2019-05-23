@@ -6,17 +6,8 @@ public class Q43 {
 		sucessor de 60 a 0. Não pode ser utilizado nem um comando de seleção e repetição.
 	*/
 
-	private static int ler () {
-		int numero = Integer.parseInt(JOptionPane.showInputDialog("Número (0...60): "));
-		if (numero < 0 || numero > 60) {
-			return ler();
-		}
-
-		return numero;
-	}
-
 	public static void main (String[] args) {
-		int numero = ler();
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Número (0...60): "));
 		int sucessor = (numero + 1) % 61;
 
 		String text = "Sucessor de " + numero + " é " + sucessor + "!";
