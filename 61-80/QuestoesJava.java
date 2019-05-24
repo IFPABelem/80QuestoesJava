@@ -4,7 +4,7 @@ public class QuestoesJava {
 
     public static void main(String[] args) {
         Questoes questao = new Questoes();
-        questao.q80();
+        questao.q75();
     }
     
 }
