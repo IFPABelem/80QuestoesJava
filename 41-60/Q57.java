@@ -11,7 +11,7 @@ public class Q57 {
 		String text = "Divisível por ";
 
 		if (numero == 0) {
-			text += "nenhum da lista."; // Diversão por 0 não é valido
+			text += "por nenhum destes."; // Diversão por 0 não é valido
 		} else if (numero % 10 == 0) {
 			text += "10.";
 		} else if (numero % 5 == 0) {
@@ -19,7 +19,7 @@ public class Q57 {
 		} else if (numero % 2 == 0) {
 			text += "2.";
 		} else {
-			text += "nenhum da lista.";
+			text += "por nenhum destes.";
 		}
 
 		JOptionPane.showMessageDialog(null, text);
