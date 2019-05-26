@@ -6,23 +6,24 @@ public class Q50 {
 		caso contrário imprima o valor absoluto do número.
 	*/
 
-	private static int inverso(int numero) {
-		int novoNumero;
-		for(novoNumero = 0; numero > 0; numero /= 10) {
-			int digito = numero % 10;
-			novoNumero =  (novoNumero * 10) + digito;
+	private static String inverso(String numeroStr) {
+		String novoNumero = "";
+		int tamanho = numeroStr.length();
+		for(int i = 0; i < tamanho; i++) {
+			novoNumero += numeroStr.charAt(tamanho - i - 1);
 		}
 		return novoNumero;
 	}
 
 	public static void main (String[] args) {
-		int n = Integer.parseInt(JOptionPane.showInputDialog("Número: "));
+		String numeroStr = JOptionPane.showInputDialog("Número: ");
+		int numero = Integer.parseInt(numeroStr);
 		String text = "Número";
 
-		if (n > 0) {
-			text += " inverso: " + inverso(n);
+		if (numero > 0) {
+			text += " inverso: " + inverso(numeroStr);
 		} else {
-			text += ": " + n;
+			text += " absoluto: " + numero * -1;
 		}
 
 		JOptionPane.showMessageDialog(null, text);
