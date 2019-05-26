@@ -175,9 +175,9 @@ public class Questoes {
         double salario = Double.parseDouble(JOptionPane.showInputDialog("Insira o salário"));
         if (salario <= 600) {
             JOptionPane.showMessageDialog(null, "Isento");
-        } else if (salario > 600 && salario <= 1200) {
+        } else if (salario > 600 && salario < 1200) {
             JOptionPane.showMessageDialog(null, "Desconto: " + (salario * 0.2));
-        } else if (salario > 1200 && salario <= 2000) {
+        } else if (salario > 1200 && salario < 2000) {
             JOptionPane.showMessageDialog(null, "Desconto: " + (salario * 0.25));
         } else if (salario > 2000) {
             JOptionPane.showMessageDialog(null, "Desconto: " + (salario * 0.30));
@@ -206,6 +206,7 @@ public class Questoes {
         //O –Z: sala 103
         String nome = JOptionPane.showInputDialog("Insira seu nome").toUpperCase();
         char inicial = nome.charAt(0);
+        
         if (inicial >= 'A' && inicial <= 'K') {
             JOptionPane.showMessageDialog(null, "A – K: Sala 101");
         } else if (inicial >= 'L' && inicial <= 'N') {
@@ -283,7 +284,7 @@ public class Questoes {
             JOptionPane.showMessageDialog(null, "Categoria: Juvenil A");
         } else if (idade >= 14 && idade <= 17) {
             JOptionPane.showMessageDialog(null, "Categoria: Juvenil B");
-        } else if (idade >= 18) {
+        } else if (idade > 18) {//>=18
             JOptionPane.showMessageDialog(null, "Categoria: Sênior");
         } else {
             JOptionPane.showMessageDialog(null, "Idade inválida!");
@@ -297,7 +298,7 @@ public class Questoes {
         //Acima de 29 até 45 anos – 120 reais
         //Acima de 45 até 59 anos – 150 reais
         //Acima de 59 até 95 anos – 250 reais
-        //Maior que 65 anos – 400 reais -> Acima de 95*
+        //Maior que 65 anos – 400 reais -> Acima de 95*?
         //Faça um programa que leia o nome e a idade de uma pessoa e imprima o nome e o valor que ela deverá pagar.
         String nome = JOptionPane.showInputDialog("Insira o nome");
         int idade = Integer.parseInt(JOptionPane.showInputDialog("Insira a idade"));
@@ -309,10 +310,10 @@ public class Questoes {
             JOptionPane.showMessageDialog(null, "Nome: " + nome + "\nValor a pagar: 120 reais");
         } else if (idade > 45 && idade <= 59) {
             JOptionPane.showMessageDialog(null, "Nome: " + nome + "\nValor a pagar: 150 reais");
+        } else if(idade > 65){
+            JOptionPane.showMessageDialog(null, "Nome: " + nome + "\nValor a pagar: 400 reais");
         } else if (idade > 59 && idade <= 95) {
             JOptionPane.showMessageDialog(null, "Nome: " + nome + "\nValor a pagar: 250 reais");
-        } else {
-            JOptionPane.showMessageDialog(null, "Nome: " + nome + "\nValor a pagar: 400 reais");
         }
     }
 
@@ -347,7 +348,7 @@ public class Questoes {
         int eleitores = Integer.parseInt(JOptionPane.showInputDialog("Insira a quantidade de eleitores aptos"));
         int votos = Integer.parseInt(JOptionPane.showInputDialog("Insira a quantidade de votos do candidato mais votado"));
 
-        if (eleitores > 20000 && votos <= (eleitores / 2)) {//se tiverem mais de 20 mil eleitores e os votos do cand. mais votado não forem maior que 50%, terá segundo turno
+        if (eleitores > 20000 && votos > (eleitores / 2)) {//<50%?
             JOptionPane.showMessageDialog(null, "Município: " + municipio + "\nTerá segundo turno");
         } else {
             JOptionPane.showMessageDialog(null, "Município: " + municipio + "\nNão terá segundo turno");
@@ -384,7 +385,7 @@ public class Questoes {
             JOptionPane.showMessageDialog(null, "Saldo médio: " + saldo + "\nValor do crédito: " + (saldo * 0.3));
         } else if (saldo >= 1001 && saldo <= 3000) {
             JOptionPane.showMessageDialog(null, "Saldo médio: " + saldo + "\nValor do crédito: " + (saldo * 0.4));
-        } else if (saldo >= 3001) {
+        } else if (saldo > 3001) {
             JOptionPane.showMessageDialog(null, "Saldo médio: " + saldo + "\nValor do crédito: " + (saldo * 0.5));
         }
     }
