@@ -1,4 +1,5 @@
-//19. Faça um programa que entre com a base e altura de um retângulo e exiba na tela: perímetro, área e a diagonal.
+/*19. Faça um programa que entre com a base e altura de um retângulo e exiba na tela:
+perímetro, área e a diagonal.*/
 package trabalhodejava;
     import javax.swing.JOptionPane;
     public class QuestaoDezenove
