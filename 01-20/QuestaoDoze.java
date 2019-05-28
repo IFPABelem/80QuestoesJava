@@ -7,6 +7,6 @@ package trabalhodejava;
         {
         double Num=Float.parseFloat(JOptionPane.showInputDialog("Digite um Número:"));
         double Resultado=Math.log10(Num);
-        JOptionPane.showMessageDialog(null,"Resultado do log de "+Num+" na base decimal "+Resultado);
+        JOptionPane.showMessageDialog(null,"Resultado do log de "+Num+" na base 10 "+Resultado);
         }
     }
