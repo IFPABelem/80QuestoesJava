@@ -12,7 +12,7 @@ package trabalhodejava;
         float Quilowatts=Float.parseFloat(JOptionPane.showInputDialog("Quilowatts gastos:"));
         
         float Valor_quilowatts=100/(Salario_Minimo/7);
-        float Valor_a_serpago=Valor_quilowatts*Quilowatts;
+        float Valor_a_ser_pago=Valor_quilowatts*Quilowatts;
         float Desconto=((Valor_quilowatts*Quilowatts)/100)*10;
         float Valor_a_ser_pago_com_desconto=(Valor_quilowatts*Quilowatts)-Desconto;
         
