@@ -5,8 +5,8 @@ package trabalhodejava;
     {
         public static void main(String [] args)
         {
-        int a=Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número: "));
-        int b=Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número: "));
+        int a=Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número inteiro: "));
+        int b=Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número inteiro: "));
         JOptionPane.showMessageDialog(null,"Os números digitados são: "+a+" e "+b);
         }
     }
