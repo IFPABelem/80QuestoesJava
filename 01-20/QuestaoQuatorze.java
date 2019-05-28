@@ -5,8 +5,8 @@ package trabalhodejava;
     {
         public static void main(String [] args)
         {
-        float Num=Float.parseFloat(JOptionPane.showInputDialog("Digite um número:"));
-        float Quadrado=Num*Num;
+        double Num=Double.parseDouble(JOptionPane.showInputDialog("Digite um número:"));
+        double Quadrado=Num*Num;
         double Raiz=Math.sqrt(Num);
         JOptionPane.showMessageDialog(null,"Número Digitado: "+Num+"\n"+
         "Quadrado do Número Digitado: "+Quadrado+"\n"+"Raiz Quadrada do Número Digitado: "+Raiz);
