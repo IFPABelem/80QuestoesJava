@@ -6,10 +6,8 @@ package trabalhodejava;
         public static void main(String [] args)
         {
         int n=Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o número inteiro: "));
-        int ante;
-        int suce;
-        ante =n-1;
-        suce =n+1;
+        int ante=n-1;
+        int suce=n+1;
         JOptionPane.showMessageDialog(null,"Antecessor: "+ante+"\n"+"Sucessor: "+suce);
         }
     }
