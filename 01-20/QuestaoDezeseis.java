@@ -1,4 +1,5 @@
-//16. Faça um programa que entre com um número no formato CDU e exiba na tela invertido: UDC. Exiba na tela das duas maneiras em variáveis individuais.
+/*16. Faça um programa que entre com um número no formato CDU e exiba na tela invertido:
+UDC. Exiba na tela das duas maneiras em variáveis individuais.*/
 package trabalhodejava;
     import javax.swing.JOptionPane;
     public class QuestaoDezeseis
