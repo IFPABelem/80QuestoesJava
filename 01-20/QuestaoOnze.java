@@ -1,4 +1,5 @@
-//11. Faça um programa que entre com um angulo em graus e exiba na tela: seno, co-seno, tangente, secante, co-secante e co-tangente do mesmo.
+/*11. Faça um programa que entre com um angulo em graus e exiba na tela: seno, co-seno, tangente,
+secante, co-secante e co-tangente do mesmo.*/
 package trabalhodejava;
     import javax.swing.JOptionPane;
     public class QuestaoOnze
