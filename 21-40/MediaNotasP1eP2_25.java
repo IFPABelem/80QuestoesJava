@@ -14,14 +14,14 @@ public class MediaNotasP1eP2_25
         double p2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota P2: "));
         
         double media = (p1 + p2) / 2;
-        double media_truncada = Math.ceil(media);    
+        int media_truncada = (int) media;    
         double medi_arredondada = Math.round(media);
         
         JOptionPane.showMessageDialog(null, "Nota 1: " + p1
         + "\n" + "Nota 2: " + p2
         + "\n" + "Média: " + media
         + "\n" + "Média arredondada: " + medi_arredondada
-        + "\n" + "Média truncada: " + (media_truncada - 1));
+        + "\n" + "Média truncada: " + media_truncada);
     }
 }
         
