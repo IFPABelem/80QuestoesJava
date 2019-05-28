@@ -1,3 +1,4 @@
+
 import javax.swing.JOptionPane;
 
 public class IfExXV {
@@ -22,25 +23,49 @@ public class IfExXV {
 //        }
 //        JOptionPane.showMessageDialog(null, text);
 
-        //65 - Faça um programa que leia 3 números e imprima-os em ordem decrescente
-        double n1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número"));
-        double n2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número"));
-        double n3 = Double.parseDouble(JOptionPane.showInputDialog("Insira o terceiro número"));
-        
-        double[] numeros = {n1, n2, n3};
-        n2+=n1+n3;
+//        //65 - Faça um programa que leia 3 números e imprima-os em ordem decrescente
+//        double n1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número"));
+//        double n2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número"));
+//        double n3 = Double.parseDouble(JOptionPane.showInputDialog("Insira o terceiro número"));
+//        
+//        double[] numeros = {n1, n2, n3};
+//        n2+=n1+n3;
+////        {+312, +321, 132, +123, +213, +231}
+//        for (double numero : numeros) {
+//            if(numero>n3){
+//                n3=numero;
+//            }else if(numero<n1){
+//                n1=numero;
+//            }
+//        }
+//        
+//        n2-=n1+n3;
+//        
+//        JOptionPane.showMessageDialog(null, n3+"\n"+n2+"\n"+n1);
+
+ //66 - Faça um programa que leia 3 números e armazene-os em 3 variáveis com os seguintes nomes: maior, intermediário e menor.
+ 
+        double menor = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número"));
+        double intermediario = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número"));
+        double maior = Double.parseDouble(JOptionPane.showInputDialog("Insira o terceiro número"));
+
+        double[] numeros = {menor, intermediario, maior};
+        intermediario+=menor+maior;
 //        {+312, +321, 132, +123, +213, +231}
         for (double numero : numeros) {
-            if(numero>n3){
-                n3=numero;
-            }else if(numero<n1){
-                n1=numero;
+            if(numero>maior){
+                maior=numero;
+            }else if(numero<menor){
+                menor=numero;
             }
         }
         
-        n2-=n1+n3;
-        
-        JOptionPane.showMessageDialog(null, n3+"\n"+n2+"\n"+n1);
+        intermediario-=menor+maior;
+
+        JOptionPane.showMessageDialog(null,
+                "Maior: " + maior
+                + "\nIntermediario: " + intermediario
+                + "\nMenor: " + menor);
 
     }
 }
