@@ -1,4 +1,5 @@
-//15. Faça um programa que entre com o saldo de uma aplicação e exiba na tela um novo saldo, considerando um reajuste de 1%.
+/*15. Faça um programa que entre com o saldo de uma aplicação e exiba na tela um novo saldo,
+considerando um reajuste de 1%.*/
 package trabalhodejava;
     import javax.swing.JOptionPane;
     public class QuestaoQuinze
