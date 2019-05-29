@@ -5,8 +5,8 @@ package trabalhodejava;
     {
         public static void main(String [] args)
         {
-        int a=8, b=9, c=7, media;
-        media=(a+b+c)/3;
+        int a=8, b=9, c=7;
+        int media=(a+b+c)/3;
         JOptionPane.showMessageDialog(null,"Média entre 8, 9 e 7 é = "+media);
         }
     }
