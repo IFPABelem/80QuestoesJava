@@ -1,7 +1,7 @@
 
 import javax.swing.JOptionPane;
 
-public class IfExXV {
+public class notas {
 
     public static void main(String[] args) {
 
