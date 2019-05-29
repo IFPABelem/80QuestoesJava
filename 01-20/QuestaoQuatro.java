@@ -8,6 +8,7 @@ package trabalhodejava;
         String nome=JOptionPane.showInputDialog("Nome: ");
         String endereco=JOptionPane.showInputDialog("Endereço: ");
         String telefone=JOptionPane.showInputDialog("Telefone: ");
-        JOptionPane.showMessageDialog(null,"Nome: "+nome+"\n"+"Endereço: "+endereco+"\n"+"Telefone: "+telefone);
+        JOptionPane.showMessageDialog(null,"Nome: "+nome+"\n"+"Endereço: "+endereco+"\n"+
+        "Telefone: "+telefone);
         }
     }
