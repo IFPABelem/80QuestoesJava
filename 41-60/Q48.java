@@ -19,15 +19,6 @@ public class Q48 {
 		D) O último dígito desse resultado é o dígito verificador da conta(40 -> 0).
 	*/
 
-	private static int ler () {
-		int numero = Integer.parseInt(JOptionPane.showInputDialog("Conta corrente (3 dígitos): "));
-		if (numero < 0 || numero > 999) { //000...999
-			return ler();
-		}
-
-		return numero;
-	}
-
 	private static int inverso (int numero) {
 		int novoNumero;
 		for(novoNumero = 0; numero != 0; numero /= 10) {
@@ -52,7 +43,7 @@ public class Q48 {
 	}
 
 	public static void main (String[] args) {
-		int contaCorrente = ler();
+		int contaCorrente = Integer.parseInt(JOptionPane.showInputDialog("Conta corrente (3 dígitos): "));
 
 		int digitoVerificador = contaCorrente + inverso(contaCorrente); // A
 		digitoVerificador = multiplicarSomar(inverso(digitoVerificador)); // B & C

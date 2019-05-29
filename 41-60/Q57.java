@@ -10,9 +10,8 @@ public class Q57 {
 		double numero = Double.parseDouble(JOptionPane.showInputDialog("Número: "));
 		String text = "Divisível por ";
 
-		if (numero == 0) {
-			text += "por nenhum destes."; // Diversão por 0 não é valido
-		} else if (numero % 10 == 0) {
+
+		if (numero % 10 == 0) {
 			text += "10.";
 		} else if (numero % 5 == 0) {
 			text += "5.";
