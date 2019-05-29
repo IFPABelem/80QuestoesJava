@@ -23,7 +23,7 @@ public class Q50 {
 		if (numero > 0) {
 			text += " inverso: " + inverso(numeroStr);
 		} else {
-			text += " absoluto: " + numero * -1;
+			text += " absoluto: " + Math.abs(numero);
 		}
 
 		JOptionPane.showMessageDialog(null, text);
