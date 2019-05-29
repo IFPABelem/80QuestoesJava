@@ -12,4 +12,5 @@ package trabalhodejava;
         "Primeiro caractere: "+Nome.charAt(0)+"\n"+"Último caractere: "+Nome.charAt(Nome.length()-1)+"\n"+
         "Do primeiro ao terceiro caractere: "+Nome.substring(0,3)+"\n"+"Quarto caractere: "+Nome.charAt(3)+"\n"+
         "Todos menos o primeiro e os dois últimos: "+Nome.substring(1,Nome.length()-2));
-        
+        }
+    }
